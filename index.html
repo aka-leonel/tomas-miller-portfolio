@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomás Miller | Fotografía, Filmación y Montaje</title>
+
+    <!-- Tipografía Google Fonts (Outfit) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Íconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Hoja de Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <header>
+        <div class="nav-container">
+            <a href="#inicio" class="logo">Tomás<span>Miller</span></a>
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú de navegación">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#audiovisual">Videoclips & Cine</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <!-- Botón para conmutar el tema (Oscuro/Claro) -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro/claro">
+                        <i class="fa-solid fa-moon" id="themeIcon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- SECCIÓN INICIO (HERO) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Fotografía, Filmación y <span>Montaje</span></h1>
+            <p>Una mirada periodística y lenguaje cinematográfico aplicados a la imagen y al relato audiovisual.</p>
+            <a href="#portfolio" class="btn">Ver Trabajos</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi">
+        <h2 class="section-title">Sobre mí</h2>
+        <p class="section-subtitle">Formación académica y trayectoria en el medio audiovisual</p>
+        
+        <div class="about-grid">
+            <div class="about-text">
+               <h3>Hola, soy Tomás Miller</h3>
+               <p>Soy <strong>Licenciado en Periodismo</strong> recibido en la UNDAV y actualmente continúo mi especialización cursando la <strong>Licenciatura en Artes Audiovisuales en la UNA</strong>.</p>
+               <p>Mi experiencia profesional abarca el campo de la fotografía fija, la realización de documentales y la dirección/montaje en videoclips musicales. Combino el rigor en la investigación periodística con una sólida sensibilidad estética y técnica en el lenguaje cinematográfico y la edición de video.</p>
+               
+               <div class="badges">
+                   <span class="badge"><i class="fa-solid fa-graduation-cap"></i> Lic. Periodismo (UNDAV)</span>
+                   <span class="badge"><i class="fa-solid fa-film"></i> Artes Audiovisuales (UNA)</span>
+                   <span class="badge"><i class="fa-solid fa-camera"></i> Fotografía & Edición</span>
+               </div>
+            </div>
+            
+            <!-- 
+                COMENTARIO PARA REEMPLAZAR FOTO DE PERFIL:
+                Podés reemplazar el div .about-image por una imagen real.
+                Ejemplo: <img src="assets/tomas.jpg" alt="Tomás Miller" style="width:100%; height:350px; object-fit:cover; border-radius:16px;">
+            -->
+                
+                <img src="img/fotografo.jpg" alt="Tomás Miller" style="width:100%; height:350px; object-fit:cover; border-radius:16px;">
+            <!-- <div class="about-image">
+                <div>
+                    <i class="fa-regular fa-image" style="font-size: 2.5rem; margin-bottom: 0.5rem;"></i>
+                    <p>[ Espacio para Fotografía de Perfil ]<br><small>Reemplazar este contenedor con una etiqueta &lt;img&gt;</small></p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- SECCIÓN PORTFOLIO / GALERÍA DE FOTOS -->
+    <section id="portfolio">
+        <h2 class="section-title">Portfolio Fotográfico</h2>
+        <p class="section-subtitle">Selección de proyectos de fotografía y registro visual</p>
+
+        <div class="portfolio-grid">
+            <!-- PLACEHOLDER 1 -->
+            <div class="portfolio-item">
+                <!-- COMENTARIO PARA REEMPLAZAR IMAGEN: Reemplazar el div .portfolio-img-placeholder por <img src="assets/foto1.jpg" alt="Descripción" style="width:100%; height:220px; object-fit:cover;"> -->
+                <div class="portfolio-img-placeholder">
+                    <img src="img/pueblo.png" alt="Descripción" style="width:100%; height:220px; object-fit:cover;">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Serie Documental / Urbana</h4>
+                    <p>Registro fotográfico en locación, explorando la estética urbana y texturas arquitectónicas.</p>
+                </div>
+            </div>
+
+            <!-- PLACEHOLDER 2 -->
+            <div class="portfolio-item">
+                <!-- COMENTARIO PARA REEMPLAZAR IMAGEN: Reemplazar el div .portfolio-img-placeholder por <img src="assets/foto2.jpg" alt="Descripción" style="width:100%; height:220px; object-fit:cover;"> -->
+                <div class="portfolio-img-placeholder">
+                     <img src="img/camara.jpg" alt="Descripción" style="width:100%; height:220px; object-fit:cover;">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Retrato & Cobertura</h4>
+                    <p>Iluminación controlada y dirección de arte en sesiones fotográficas conceptuales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN AUDIOVISUAL / VIDEOCLIPS Y DOCUMENTALES -->
+    <section id="audiovisual">
+        <h2 class="section-title">Videoclips & Documentales</h2>
+        <p class="section-subtitle">Realización, dirección de fotografía y montaje de video</p>
+
+        <div class="video-grid">
+            <!-- TARJETA DE VIDEOCLIP ACTUAL -->
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube-nocookie.com/embed/McPpTczu5Rs" title="Poli-Ladrón - Eranko ft Vito" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                </div>
+                <div class="video-details">
+                    <h4>Poli-Ladrón - Eranko ft Vito</h4>
+                    <p>Videoclip de música urbana. Labores de rodaje, dirección y montaje.</p>
+                </div>
+            </div>
+
+            <!-- 
+                INSTRUCCIONES PARA AGREGAR NUEVOS VIDEOS / DOCUMENTALES EN EL FUTURO:
+                Para agregar un nuevo video, copiá todo el bloque <div class="video-card">...</div> y:
+                1. Reemplazá el ID de YouTube en el atributo src del iframe (el texto después de /embed/).
+                2. Editá el título (h4) y la descripción (p) según corresponda.
+            -->
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-subtitle">¿Tenés un proyecto en mente? Hablemos.</p>
+
+        <div class="contact-box">
+            <p>Disponible para propuestas en dirección de fotografía, realización audiovisual, cobertura periodística y montaje.</p>
+            <a href="mailto:tomasmiller@correo.com" class="btn"><i class="fa-solid fa-envelope"></i> Enviar Mensaje</a>
+
+            <div class="social-links">
+                <a href="https://github.com/tu-usuario" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/tu-perfil" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/tu-instagram" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Tomás Miller. Todos los derechos reservados. Desarrollado por aka-leonel.</p>
+    </footer>
+
+    <!-- Lógica de Javascript externa -->
+    <script src="script.js"></script>
+</body>
+</html>
